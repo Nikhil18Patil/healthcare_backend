@@ -2,8 +2,25 @@
 
 
 ## Authentication
-The API  swagger doc is http://your_base_url/.
-the api redoc is on http://your_base_url/redoc
+- The API  swagger doc is http://your_base_url/.
+- the api redoc is on http://your_base_url/redoc
+
+
+## Installation
+
+1. Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+2. Create a `.env` file in the main project directory and add the following:
+```
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+DB_HOST=localhost
+DB_PORT=5432
+```
 
 ## Authentication
 The API requires authentication using a Bearer Token. Users must first register and log in to obtain a token.
@@ -32,7 +49,7 @@ The API requires authentication using a Bearer Token. Users must first register 
 - **GET** `/api/mappings/{patient_id}/` - Get all doctors assigned to a specific patient.
 - **DELETE** `/api/mappings/{id}/` - Remove a doctor from a patient.
 
-```
+
 ---
 
 ## Notes
